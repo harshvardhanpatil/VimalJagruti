@@ -41,6 +41,7 @@
             android:layout_marginBottom="200dp"
             >
             <Button
+                android:id="@+id/createNew"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -48,11 +49,12 @@
                 android:text="Add new Customer"
                 android:layout_marginVertical="25dp"/>
             <Button
+                android:id="@+id/scanQR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:background="@drawable/rounded_edittext"
-                android:text="Add new Customer"
+                android:text="Scan QR"
                 android:layout_marginVertical="25dp"/>
 
         </LinearLayout>
