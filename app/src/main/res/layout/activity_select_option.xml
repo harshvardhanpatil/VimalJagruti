@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SelectOptionActivity"
+    tools:context=".CarAvailability"
     android:background="@drawable/bgapps"
     >
     <RelativeLayout
@@ -40,14 +40,24 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="200dp"
             >
-            <Button
-                android:id="@+id/createNew"
+
+            <EditText
+                android:id="@+id/customRegistraionEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:background="@drawable/rounded_edittext"
-                android:text="Add new Customer"
-                android:layout_marginVertical="25dp"/>
+                android:hint="Enter Registration no"
+                android:padding="15dp"
+                android:textAlignment="center"
+                />
+<!--            <Button-->
+<!--                android:id="@+id/createNew"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:background="@drawable/rounded_edittext"-->
+<!--                android:text="Add new Customer"-->
+<!--                android:layout_marginVertical="25dp"/>-->
             <Button
                 android:id="@+id/scanQR"
                 android:layout_width="match_parent"
@@ -55,9 +65,13 @@
                 android:layout_alignParentBottom="true"
                 android:background="@drawable/rounded_edittext"
                 android:text="Scan QR"
-                android:layout_marginVertical="25dp"/>
+                android:layout_marginVertical="26dp"/>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     </RelativeLayout>
 
 </LinearLayout>
