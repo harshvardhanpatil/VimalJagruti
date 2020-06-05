@@ -29,6 +29,15 @@ public class CarAvailability extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        existingUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), UserListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
         //customRegistraionEditText.setFilters(new InputFilter[]{new InputFilter.AllCaps()});

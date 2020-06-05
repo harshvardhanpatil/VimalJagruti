@@ -104,9 +104,13 @@ public class UserListActivity extends AppCompatActivity {
                             list1.add(entity);
                         }
                         adapter=new UserListAdapter(list1,getApplicationContext());
+                        Log.w("DEBUG ADAPTER","CHECK POINT 1");
                         recyclerView.setAdapter(adapter);
+                        Log.w("DEBUG ADAPTER","CHECK POINT 2");
                         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+                        Log.w("DEBUG ADAPTER","CHECK POINT 3");
                         pullToRefresh.setRefreshing(false);
+                        Log.w("DEBUG ADAPTER","CHECK POINT 4");
 
                     }
                 } catch (JSONException e) {

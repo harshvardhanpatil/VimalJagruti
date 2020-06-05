@@ -4,11 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vimaljagruti.CarAvailability;
+import com.example.vimaljagruti.JobCardActivity;
 import com.example.vimaljagruti.R;
 
 public class UserListHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -22,14 +24,18 @@ public class UserListHolder extends RecyclerView.ViewHolder implements View.OnCl
         email = itemView.findViewById(R.id.et_email);
         registration = itemView.findViewById(R.id.et_registration);
 
+        itemView.setOnClickListener(this);
         this.context = context;
     }
 
     @Override
     public void onClick(View v) {
 
+        //Toast.makeText(context,"here is it",Toast.LENGTH_LONG).show();
+
         //Add The Activity Which You want to go
-        Intent i = new Intent(v.getContext(), CarAvailability.class).putExtra("PHONE",phone.getText());
+        Intent i = new Intent(v.getContext(), JobCardActivity.class).putExtra("PHONE",phone.getText());
         v.getContext().startActivity(i);
+        Toast.makeText(context,phone.getText().toString(),Toast.LENGTH_LONG).show();
     }
 }
