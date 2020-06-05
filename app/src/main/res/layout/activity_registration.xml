@@ -38,11 +38,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enter Details"
-        android:textColor="#F49393"
+        android:textColor="#fff"
         android:textAlignment="center"
         android:fontFamily="sans-serif"
-        android:textStyle="bold|italic"
-        android:textSize="35dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
         android:layout_marginBottom="20dp"/>
 
 
@@ -64,38 +64,50 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/squarebackround"
-                    android:hint="Customer Name"
-                    android:fontFamily="serif-monospace"
-                    android:textStyle="bold"
-                    android:layout_marginVertical="10dp"
-                    />
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext"
                     android:hint="Customer Name"
                     android:fontFamily="serif-monospace"
                     android:textStyle="bold"
                     android:layout_marginVertical="10dp"
+                    android:id="@+id/cname"
                     />
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext"
-                    android:hint="Customer Name"
+                    android:hint="Registration Number"
                     android:fontFamily="serif-monospace"
                     android:textStyle="bold"
                     android:layout_marginVertical="10dp"
+                    android:id="@+id/regno"
                     />
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_edittext"
-                    android:hint="Customer Name"
+                    android:hint="Mobile Number"
                     android:fontFamily="serif-monospace"
                     android:textStyle="bold"
                     android:layout_marginVertical="10dp"
+                    android:id="@+id/mobile"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Email Id "
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/email"
+                    />
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="SUBMIT"
+                    android:id="@+id/submit"
                     />
             </LinearLayout>
         </ScrollView>

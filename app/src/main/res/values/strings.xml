@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Vimal Jagruti</string>
+    <string name="DB_URL">https://kwysruiw5f.execute-api.ap-south-1.amazonaws.com/prod/CAR_SERVICE_CRUD_API</string>
+
 </resources>
