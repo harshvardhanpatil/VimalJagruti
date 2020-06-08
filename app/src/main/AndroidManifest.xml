@@ -12,14 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewJobcardsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+        <activity android:name=".ViewJobcardsActivity"></activity>
         <activity android:name=".JobCardActivity" />
         <activity android:name=".UserListActivity" />
         <activity android:name=".CarAvailability" />
