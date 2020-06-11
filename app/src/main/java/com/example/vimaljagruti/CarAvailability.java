@@ -21,7 +21,7 @@ public class CarAvailability extends AppCompatActivity {
         scanByQr=findViewById(R.id.scanQR);
         createuser=findViewById(R.id.adduser);
         existingUser=findViewById(R.id.existinguser);
-        search=findViewById(R.id.previoususer);
+        //search=findViewById(R.id.previoususer);
         createuser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

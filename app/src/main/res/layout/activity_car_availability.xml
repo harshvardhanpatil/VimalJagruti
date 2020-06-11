@@ -10,7 +10,7 @@
     >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="40dp">
@@ -33,30 +33,34 @@
             android:textColor="#FFF"
             android:textSize="30dp"
             android:textStyle="bold" />
+    </RelativeLayout>
         <LinearLayout
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="200dp"
+
+
+            android:layout_marginHorizontal="25dp"
+
             >
 
-            <EditText
-                android:id="@+id/customRegistraionEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_edittext"
-                android:hint="Enter Registration no"
-                android:padding="15dp"
-                android:textAlignment="center"
-                />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="search by reg no"
-                android:id="@+id/previoususer"
-                
-                />
+<!--            <EditText-->
+<!--                android:id="@+id/customRegistraionEditText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/rounded_edittext"-->
+<!--                android:hint="Enter Registration no"-->
+<!--                android:padding="15dp"-->
+<!--                android:textAlignment="center"-->
+<!--                />-->
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="search by reg no"-->
+<!--                android:id="@+id/previoususer"-->
+<!--                -->
+<!--                />-->
 <!--            <Button-->
 <!--                android:id="@+id/createNew"-->
 <!--                android:layout_width="match_parent"-->
@@ -78,12 +82,17 @@
                 android:layout_height="wrap_content"
                 android:text="Create new user"
                 android:id="@+id/adduser"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginVertical="26dp"
+
                 />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Existing user list"
                 android:id="@+id/existinguser"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginVertical="26dp"
                 />
 
 
@@ -92,10 +101,6 @@
 
 
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></LinearLayout>
 
-    </RelativeLayout>
 
 </LinearLayout>
