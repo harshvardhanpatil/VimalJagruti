@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewJobcardsActivity"></activity>
+        <activity android:name=".SavePdfActivity"/>
+        <activity android:name=".ViewJobcardsActivity"/>
         <activity android:name=".JobCardActivity" />
         <activity android:name=".UserListActivity" />
         <activity android:name=".CarAvailability" />
