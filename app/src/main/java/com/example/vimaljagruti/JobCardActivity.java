@@ -21,7 +21,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.vimaljagruti.models.JobcardBean;
+import com.example.vimaljagruti.models.UserBean;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -161,8 +164,31 @@ public class JobCardActivity extends AppCompatActivity {
                                 createJobCard.setEnabled(true);
                                 Toast.makeText(getApplicationContext(),"Entry Added !!!",Toast.LENGTH_LONG).show();
                                 ///Creation success
-                                Intent intent=new Intent(getApplicationContext(), SavePdfActivity.class).putExtra("DATA",response.toString());
-                                startActivity(intent);
+                                JSONArray array = response.getJSONArray("RESULT");
+
+                                JSONObject object = array.getJSONObject(0);
+
+                                UserBean entity = new UserBean(
+                                        object.getString("USERNAME"),
+                                        object.getString("PHONE"),
+                                        object.getString("REGISTRATION"),
+                                        object.getString("EMAIL")
+                                );
+                                JobcardBean entity1 = new JobcardBean(object.getInt("JCID"),object.getString("DATE"),object.getString("PHONE"),object.getString("ISSUES"),object.getString("PRICE"),object.getString("TOTAL"));
+
+
+                                Intent i = new Intent(getApplicationContext(), SavePdfActivity.class)
+                                .putExtra("PHONE",entity.getPhone())
+                                .putExtra("NAME",entity.getUsername())
+                                .putExtra("EMAIL",entity.getEmail())
+                                .putExtra("REGISTRATION",entity.getRegistration())
+                                .putExtra("JCID",entity1.getJCID())
+                                .putExtra("DATE",entity1.getDATE())
+                                .putExtra("ISSUES",entity1.getISSUES())
+                                .putExtra("PRICES",entity1.getPRICES())
+                                .putExtra("TOTAL",entity1.getTOTAL());
+                                //Intent intent=new Intent(getApplicationContext(), SavePdfActivity.class).putExtra("DATA",response.toString());
+                                startActivity(i);
 
 
                             }
