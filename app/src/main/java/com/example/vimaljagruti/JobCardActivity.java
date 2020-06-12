@@ -161,6 +161,8 @@ public class JobCardActivity extends AppCompatActivity {
                                 createJobCard.setEnabled(true);
                                 Toast.makeText(getApplicationContext(),"Entry Added !!!",Toast.LENGTH_LONG).show();
                                 ///Creation success
+                                Intent intent=new Intent(getApplicationContext(), SavePdfActivity.class).putExtra("DATA",response.);
+                                startActivity(intent);
 
 
                             }
